@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georgie's MAGIC SHOP</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -16,7 +17,7 @@
  <fieldset>
             <legend> How to Use the App...</legend>
     
-            <ul>
+            <ul id="directions">
                 <li>Scroll though the items to view what you wish.. Pick Wisely..</li>
                 <li>Scroll over each item to examine in detail... </li>
                 <li>Click on Customer Reviews to see others.. Reactions to our products</li>
@@ -63,6 +64,15 @@
                 </div></li>
 </ul>
 
+<form>
+    <fieldset id="Customer">
+        <legend> We'd Love to Hear how you Survived!</legend>
+        <label for="Review">Customer Reviews:</label>
+        <textarea id="Review" name="Review" rows="4" cols="50">
+        </textarea>
+    <button type="submit">Submit Review</button>
+    </fieldset>
+  </form>
 </body>
 </html>
 

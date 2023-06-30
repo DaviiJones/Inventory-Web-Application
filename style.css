@@ -1,0 +1,43 @@
+body{
+    background-color: darkred;
+}
+h1,legend{
+    text-align: center;
+    color: gainsboro;
+    background-color: black;
+    font-family:Bradley Hand, cursive;
+    border: 4px dotted gainsboro;
+}
+
+p{ 
+    text-align: center;
+    color: gainsboro;
+    background-color: black;
+    font-family: 'Gill Sans',sans-serif;
+}
+
+ul{
+    color: gainsboro;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    text-align: left;
+    color: gainsboro;
+    background-color: black;
+    font-family:Bradley Hand, cursive; 
+    font-size: 30px ;
+}
+
+fieldset{
+    border: 4px dotted gainsboro;
+}
+
+#directions{
+    text-align: center;
+}
+
+#Customer{
+    text-align: center;
+}
