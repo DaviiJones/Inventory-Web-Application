@@ -10,15 +10,7 @@
     color: orange;
     font-family:Bradley Hand, cursive;
     font-size: 50px;
-}
-
-   
-  
-  
-  
-
-  
-  .menu ul li {
+}.menu ul li {
     display: inline-block;
     padding: 15px;
   }
@@ -48,5 +40,8 @@
     grid-area: m;
     background: white;
     height: 750px;
-    text-align: center;
+    text-align: left;
+  }
+  .grempic,.monkepic,.glasspic,.phonepic,.maskpic{
+    width: 200px;
   }

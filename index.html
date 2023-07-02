@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georgie's MAGIC SHOP</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="header">
@@ -16,7 +17,9 @@
     </div>
 
   <div class="primary-content">
-    <div class="sidebar">
+    <div class="sidebar"></div>
+
+    <div class="main">
         <fieldset>
             <legend> How to Use the App...</legend>
             <ul>
@@ -24,92 +27,51 @@
                 <li>Scroll over each item to examine in detail... </li>
                 
             </ul>
-    </fieldset>
-     
-    </div>
-
-    <div class="main">
-      <p><ul>
+            <div class="cart">
+              <i class="bi bi-cart"></i>
+              <div class="cartamount">0</div>
+            </div>
+        <ul>
         <li class="gremlin"><div>
-            <h3>Gremlins</h3>
-            <img src="assets/GREMLINS2.jpg">
-            <p>Gremlin. Dont feed after Dark.</p>
-            <p>In Stock</p>
-            <p><strong>PRICE:</strong>$200</p>
-            <button type="submit">Purchase</button>
-            <label for="quantity">Quantity</label>  
-            <select class="quantity" name="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-                </div></li>
+            <h3 class="name">Gremlins</h3>
+            <img class="grempic" src="assets/GREMLINS2.jpg">
+            <p class="name">Gremlins. Feeding After Dark Not Recommended</p>
+            <p class="pricetitle"><strong>Price:</strong> <span id="price">200</span> USD</p>
+            <button data-product-sku="thegrem">Add to cart</button>
+            </div></li>
              
         <li class="monkey"><div>
-            <h3>Monkey's Paw</h3>
-            <img src="assets/il_fullxfull.1669120126_dfbt.avif">
-            <p>Monkey's Paw. Grants Three Wishes.</p>
-            <p>In Stock</p>
-            <p><strong>PRICE:</strong>$250</p>
-            <button type="submit">Purchase</button>
-            <label for="quantity">Quantity</label>  
-            <select class="quantity" name="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+            <h3 class="name">Monkey's Paw</h3>
+            <img class="monkepic" src="assets/il_fullxfull.1669120126_dfbt.avif">
+            <p class="name">Monkey's Paw. Grants Three Wishes.</p>
+            <p class="pricetitle"><strong>Price:</strong> <span id="price">500</span> USD</p>
+            <button data-product-sku="themonke">Add to cart</button>
                  </div></li>
             
         <li class="glass"><div>
-            <h3>The Lasser Glass</h3>
-            <img src="assets/Lasser_Glass_-_Edited.png">
-            <p>Large, Antique Mirror dating back to the 18th Century. Keep Pets & Plants at a Distance.</p>
-            <p>In Stock</p>
-            <p><strong>PRICE:</strong>$500</p>
-            <button type="submit">Purchase</button>
-            <label for="quantity">Quantity</label>  
-            <select class="quantity" name="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+            <h3 class="name">The Lasser Glass</h3>
+            <img class="glasspic" src="assets/Lasser_Glass_-_Edited.png">
+            <p class="name">Large, Antique Mirror dating back to the 18th Century. Keep Pets & Plants at a Distance.</p>
+            <p class="pricetitle"><strong>Price:</strong> <span id="price">750</span> USD</p>
+            <button data-product-sku="theglass">Add to cart</button>
                 </div></li>
     
         <li class="phone"><div>
             <h3>"Scary" Phone</h3>
-            <img src="assets/il_1080xN.3708274497_1r3u.avif">
-            <p>Vintage Cellular Wireless Phone. Answering Phone not Recommended.</p>
-            <p>In Stock</p>
-            <p><strong>PRICE:</strong>$25</p>
-            <button type="submit">Purchase</button>
-            <label for="quantity">Quantity</label>  
-            <select class="quantity" name="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+            <img class="phonepic" src="assets/il_1080xN.3708274497_1r3u.avif">
+            <p class="name">Vintage Wireless Cellular  Phone. Answering Phone not Recommended.</p>
+            <p class="pricetitle"><strong>Price:</strong> <span id="price">60</span> USD</p>
+            <button data-product-sku="thephone">Add to cart</button>
                     </div></li>
         
         <li class="mask"><div>
             <h3>The Mask</h3>
-            <img src="assets/images.jpeg">
-            <p>An Ancient Mask, Scandinavian Origin. Brings out the "Best" & "Worst" in you.</p>
-            <p>In Stock</p>
-            <p><strong>PRICE:</strong>$100</p>
-            <button type="submit">Purchase</button>
-            <label for="quantity">Quantity</label>  
-            <select class="quantity" name="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+            <img class="maskpic" src="assets/images.jpeg">
+            <p class="name">An Ancient Mask, Scandinavian Origin. Brings out the "Best" & "Worst" in you.</p>
+            <p class="pricetitle"><strong>Price:</strong> <span id="price">200</span> USD</p>
+            <button data-product-sku="themask">Add to cart</button>
                     </div></li>
-    </ul>.</p>
+    </ul>
     </div>
   </div>
 </body>
