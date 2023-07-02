@@ -1,3 +1,6 @@
+body{
+  background: black;
+}
 .header{
     display: grid;
     grid-template-columns: repeat(1fr,4);
@@ -7,20 +10,21 @@
   }
 .title{
     text-align: center;
-    color: orange;
+    color: orangered;
     font-family:Bradley Hand, cursive;
     font-size: 50px;
-}.menu ul li {
+}
+.primary-content .sidebar{
+  grid-area: "s";
+  background: black;
+  color: orangered;
+}
+.menu ul li {
     display: inline-block;
     padding: 15px;
+    background-color: white;
   }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .primary-content{
+.primary-content{
     display: grid;
     grid-template-columns: repeat(1fr,4);
     grid-template-areas: 
@@ -28,20 +32,21 @@
     "f f f f"
     ;
   }
-
-  .sidebar{
-    grid-area: s;
-    background-color: black;
-    color: white;
-    text-align: left;
-}
-  
-  .main{
+.main{
     grid-area: m;
     background: white;
-    height: 750px;
+    height: auto;
     text-align: left;
   }
   .grempic,.monkepic,.glasspic,.phonepic,.maskpic{
     width: 200px;
+  }
+
+  @media(max-width: 768px){
+    .title{
+      text-align: left;
+    }
+    .directions{
+      display: none;
+    }
   }
